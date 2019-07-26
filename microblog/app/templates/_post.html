@@ -1,0 +1,9 @@
+<!--Post sub-template for one individual blog post 
+Displays the author's gravatar, followed by the post 
+username and body-->
+<table>
+    <tr valign="top">
+        <td><img src="{{ post.author.avatar(36) }}"></td>
+        <td>{{ post.author.username }} says:<br>{{ post.body }}</td>
+    </tr>
+</table>
